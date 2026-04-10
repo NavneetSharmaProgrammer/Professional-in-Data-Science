@@ -1,0 +1,4 @@
+i = 1
+while True:  
+    print(i)
+    i = i + i + i + i + i + i  # This will create an infinite loop because i is never incremented

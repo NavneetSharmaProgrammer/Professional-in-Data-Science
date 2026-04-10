@@ -333,69 +333,84 @@ print("Total Bill: ₹",bill)
 
 
 
+27. Validate login using username and password.
+
+us = "navneet@gmail.com"
+pa = "Navneet123"
+eus = input("Enter your username : ")
+if eus == us :
+    epa = input("Enter password : ")
+    if epa == pa :
+        print("Login Successfully")
+    else:
+        print("Incorrect Password")
+else:
+    print("Incorrect Username")
+
+28. Check student result using marks of 3 subjects.
+
+sub1 = int(input("Enter 1 subject marks : "))
+sub2 = int(input("Enter 2 subject marks : "))
+sub3 = int(input("Enter 3 subject marks : "))
+
+tm = (sub1+sub2+sub3)/3
+
+if tm > 30 :
+    print("Pass",tm)
+    if tm > 40 :
+        if tm > 60 :
+            if tm > 80:
+                if tm > 90:
+                    print("A+")
+                else:
+                    print("A")
+            else:
+                print("B")
+        else:
+            print("C")
+    else:
+        print("D")
+else:
+    print("Fail")
+
+
+29. Find the second largest number among three numbers.
+
+a = int(input("Enter 1st number : "))
+b = int(input("Enter 2nd number : "))
+c = int(input("Enter 3rd number : "))
+
+if a > b:
+    if a > c:
+        # 'a' is the largest. The second largest is the greater of 'b' and 'c'.
+        if b > c:
+            print(b, "is the second largest.")
+        else:
+            print(c, "is the second largest.")
+    else:
+        # 'c' is greater than 'a', and 'a' is greater than 'b' (c > a > b).
+        # Therefore, 'a' is in the middle.
+        print(a, "is the second largest.")
+else:
+    # Here, 'b' is greater than or equal to 'a'.
+    if b > c:
+        # 'b' is the largest. The second largest is the greater of 'a' and 'c'.
+        if a > c:
+            print(a, "is the second largest.")
+        else:
+            print(c, "is the second largest.")
+    else:
+        # 'c' is greater than 'b', and 'b' is greater than 'a' (c > b >= a).
+        # Therefore, 'b' is in the middle.
+        print(b, "is the second largest.")
+
+
+30. Check loan eligibility using age, salary, and credit score.
+
 
 """
 
-
-            
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+age = int(input("Enter your age : "))
+salary = float(input("Enter your monthly salary : "))
+credit = int(input("Enter your credit score : "))
 
