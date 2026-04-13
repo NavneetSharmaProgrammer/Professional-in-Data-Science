@@ -45,13 +45,142 @@ for i in range(1,11):
 Q5. Count Characters
 Take a string and count the total number of characters using a for loop.
 
-
-"""
 st = input("Enter a String : ")
 count = 0
 for char in st:
     count += 1
 print("Total number of characters:", count)
+
+
+
+PART 2 – Break Related Questions
+
+
+
+Q6. Stop at 5
+Print numbers from 1 to 10.
+Stop the loop when the number becomes 5.
+
+for i in range(1,11):
+    print(i)
+    if i == 5:
+        break
+
+
+
+PART 6 – Pattern Questions
+
+
+Q16. Star Pattern
+Print:
+*
+**
+***
+****
+*****
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end = '')
+    print()
+
+Q17. Reverse Star Pattern
+Print:
+*****
+****
+***
+**
+*
+
+rows = 6
+for i in range(6,0,-1):
+    for j in range(1,i):
+        print("*",end = '')
+    print()
+
+Q18. Number Pattern
+Print:
+1
+12
+123
+1234
+12345
+
+num = ""
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()
+
+Q19. Same Number Pattern
+Print:
+1
+22
+333
+4444
+55555
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(i,end='')
+    print()
+
+
+Q20. Pyramid Pattern
+Print:
+    *
+   ***
+  *****
+ *******
+*********
+
+for i in range(1,6):
+    for k in range(5,i,-1):
+        print(" ",end='')
+    for j in range(1,i*2):
+        print('*',end='')
+    print()
+
+Q21. Inverted Pyramid
+
+Print:
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+
+rows = 6
+for i in range(rows,0,-1):
+    for k in range(6,i,-1):
+        print(" ",end='')
+    for j in range(1,i*2):
+        print('*',end='')
+    print()
+
+
+Bonus Question
+Q22. Break in Pattern
+Print a star pattern.
+Stop printing when the row number reaches 4.
+
+for i in range(1,6):
+    if i>4:
+        break
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+
+"""
+
+
+
+
+
+        
+        
+        
 
 
 
