@@ -66,6 +66,114 @@ for i in range(1,11):
     if i == 5:
         break
 
+Q7. Search in List
+Search for number 25 in a list.
+If found, print "Found" and stop the loop.
+
+li = [12,24,23,65,68,98,97,69,25,23,54,76,27,84,37,59,35]
+for li in li:
+    print(li)
+    if li == 25:
+        print("Found")
+        break
+
+
+Q8. First Negative Number
+Given a list of numbers, print the first negative number and stop the loop.
+
+li = [12,24,23,65,68,-98,97,-69,25,-23,-54,-76,-27,84,37,59,35]
+for li in li:
+    print(li)
+    neg = li
+    if neg < 0:
+        print(neg)
+        break
+
+PART 3 – Continue Related Questions
+
+Q9. Skip 5
+Print numbers from 1 to 10.
+Skip number 5.
+
+for i in range(1,11):
+    if i == 5:
+        continue
+    print(i)
+
+
+Q10. Skip Even Numbers
+Print numbers from 1 to 20.
+Skip all even numbers.
+
+for i in range(1,21):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+
+Q11. Skip Letter
+Print each character of the string "PYTHON".
+Skip the letter "O".
+
+
+st = "PYTHON"
+
+for st in st:
+    if st == 'O':
+        continue
+    print(st)
+
+
+
+PART 4 – Pass Related Questions
+Q12. Empty Loop
+Run a loop from 1 to 5 but do nothing inside the loop using pass.
+
+for i in range(1,6):
+    pass
+
+
+Q13. Skip Using Pass
+Loop from 1 to 10.
+If number is 6, just use pass.
+
+
+for i in range(1,11):
+    if i == 6:
+        pass
+    print(i)
+
+
+
+
+PART 5 – For-Else Questions
+(Remember: else runs only if the loop is not stopped by break.)
+
+Q14. Search Number Using for-else
+Search for number 100 in a list.
+If found, print "Found".
+If not found, print "Not Found".
+
+
+num = [20,30,50,60,100,120,40]
+
+for i in num:
+    print(i)
+    if i == 100:
+        print("Found")
+        break
+else:
+    print("Not Found")
+
+
+
+Q15. Prime Number Check
+Take a number from the user and check whether it is prime using for-else.
+
+
+num = int(input("Enter a number :- "))
+
+for i in
 
 
 PART 6 – Pattern Questions
@@ -172,7 +280,19 @@ for i in range(1,6):
         print("*",end="")
     print()
 
+
+
+
 """
+num = int(input("Enter a number :- "))
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+
 
 
 

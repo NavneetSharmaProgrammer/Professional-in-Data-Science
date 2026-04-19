@@ -65,20 +65,24 @@ while a<=n:
 
 # WAP to add all the digits of a number
 
-num = 375
+
+num = int(input("Enter a number : "))
 add = 0
 rem = 0
 while num>0:
    rem = num%10
    add = add+rem
-   num = num//10
+   num //= 10
 print(add)
 
 
 
-
 """
-
+num = int(input("Enter a number : "))
+rem = 0
+add = 0
+for i in num:
+    print(i)
    
 
 

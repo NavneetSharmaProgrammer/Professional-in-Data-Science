@@ -407,10 +407,140 @@ else:
 
 30. Check loan eligibility using age, salary, and credit score.
 
-
-"""
-
 age = int(input("Enter your age : "))
 salary = float(input("Enter your monthly salary : "))
 credit = int(input("Enter your credit score : "))
+
+
+
+
+D. Python ELIF (Multiple Conditions)
+31. Print day name using day number (1–7).
+32. Print month name using month number.
+33. Display grade based on percentage.
+34. Display bonus percentage based on experience years.
+35. Identify traffic signal meaning.
+36. Categorize temperature as Cold / Warm / Hot.
+37. Categorize employee based on salary range.
+38. Print discount percentage based on purchase amount.
+39. Identify number type: single-digit / double-digit / multi-digit.
+40. Assign performance rating: Poor / Average / Good / Excellent.
+
+
+
+31. Print day name using day number (1–7).
+
+num = int(input("Enter a number between 1 - 7 :- "))
+
+if(num >=1 and num <=7):
+    print(f"Your number is {num} ")
+    if(num == 1):
+        print("Monday")
+    elif(num == 2):
+        print("Tuesday")
+    elif(num == 3):
+        print("Wednusday")
+    elif(num == 4):
+        print("Thrusday")
+    elif(num == 5):
+        print("Friday")
+    elif(num == 6):
+        print("Saturday")
+    else:
+        print("Sunday")
+else:
+    print(f"Wrong input :{num}")
+
+32. Print month name using month number.
+
+
+num = int(input("Enter a number between 1 - 12 to print month :- "))
+    if(num >=1 and num <=12):
+        print(f"Your number is {num} ")
+        if(num == 1):
+            print("January")
+        elif(num == 2):
+            print("February")
+        elif(num == 3):
+            print("March")
+        elif(num == 4):
+            print("April")
+        elif(num == 5):
+            print("May")
+        elif(num == 6):
+            print("June")
+        elif(num == 2):
+            print("July")
+        elif(num == 3):
+            print("August")
+        elif(num == 4):
+            print("September")
+        elif(num == 5):
+            print("October")
+        elif(num == 6):
+            print("November")
+        else:
+            print("December")
+    else:
+        print(f"Wrong input :{num}")
+
+
+33. Display grade based on percentage.
+
+ while True:
+    grade = float(input("Enter Your grade 1-100 :- "))
+    if(grade >=1 and grade <=100):
+        if grade <=30:
+            print("Fail")
+        elif grade <=40:
+            print("E")
+        elif grade <=50:
+            print("D")
+        elif grade <=60:
+            print("C")
+        elif grade <=70:
+            print("B")
+        elif grade <=80:
+            print("B+")
+        elif grade <=90:
+            print("A")
+        elif grade <=97:
+            print("A+")
+        elif grade <=98:
+            print("3 Rank")
+        elif grade <=99:
+            print("2 Rank")
+        elif grade <=100:
+            print("1 Rank")
+    else:
+            print(f"Wrong input :{num}")
+
+
+34. Display bonus percentage based on experience years.
+
+
+"""
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
