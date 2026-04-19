@@ -71,9 +71,9 @@ Search for number 25 in a list.
 If found, print "Found" and stop the loop.
 
 li = [12,24,23,65,68,98,97,69,25,23,54,76,27,84,37,59,35]
-for li in li:
-    print(li)
-    if li == 25:
+for num in li:
+    print(num)
+    if num == 25:
         print("Found")
         break
 
@@ -82,9 +82,9 @@ Q8. First Negative Number
 Given a list of numbers, print the first negative number and stop the loop.
 
 li = [12,24,23,65,68,-98,97,-69,25,-23,-54,-76,-27,84,37,59,35]
-for li in li:
-    print(li)
-    neg = li
+for num in li:
+    print(num)
+    neg = num
     if neg < 0:
         print(neg)
         break
@@ -118,10 +118,10 @@ Skip the letter "O".
 
 st = "PYTHON"
 
-for st in st:
-    if st == 'O':
+for char in st:
+    if char == 'O':
         continue
-    print(st)
+    print(char)
 
 
 
@@ -172,8 +172,13 @@ Take a number from the user and check whether it is prime using for-else.
 
 
 num = int(input("Enter a number :- "))
-
-for i in
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
 
 
 PART 6 – Pattern Questions
@@ -284,14 +289,7 @@ for i in range(1,6):
 
 
 """
-num = int(input("Enter a number :- "))
-if num > 1:
-    for i in range(2, num):
-        if (num % i) == 0:
-            print(num, "is not a prime number")
-            break
-    else:
-        print(num, "is a prime number")
+
 
 
 
