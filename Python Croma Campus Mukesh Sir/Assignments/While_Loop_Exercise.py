@@ -65,7 +65,7 @@ num = 234
 count = 0
 while num > 0:
     num = num//10
-    count = count +1
+    count = count + 1
 print(count)
 
 9. Reverse a number using while loop.
@@ -123,6 +123,21 @@ print("Login Successfully")
 
 15. Keep taking input numbers until user enters 0, then print total sum.
 
+num = 1
+add = 0
+while num != 0:
+    num = int(input("Enter a number : "))
+    add += num
+print("Total ",add)
+
+add = 0
+while True:
+    num = int(input("Enter a number : "))
+    add = add + num
+    if num == 0:
+        break
+print(add)
+
 
 16. Print Fibonacci series up to N terms using while loop.
 0 1 1 2 3 5 8 13 21 34 55 89.....
@@ -143,14 +158,30 @@ while i<=terms:
     i +=1
 
 
+17. Check whether a number is Armstrong number.
 
+num = 153
+ori_num = num
+count = 0
+while num > 0:
+    digit = num % 10
+    count += digit**3
+    num//=10
+
+    
+if count == ori_num:
+    print(count,"is armstrong")
+else:
+    print("Not Armstrong number")
 """
-num = 1
-add = 0
-while num != 0:
-    num = int(input("Enter a number : "))
-    add += num
-print("Total ",add)
+
+        
+
+
+
+
+
+
 
 
 
