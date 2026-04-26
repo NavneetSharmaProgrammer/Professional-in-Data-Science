@@ -35,18 +35,23 @@ if isPrime(num) and num!=1:
     print("Prime")
 else:
     print("Not Prime")
+
+    
 # WAP to find all the prime number from 1 to 100
 
 
-"""
 def isPrime(num):
     for i in range(2,num):
         if num%i==0:
             return False
     return True
 for i in range(1,101):
-    if isPrime(i) :
+    if isPrime(i) and i!=1:
         print(i)
+
+        
+"""
+
    
 
             
