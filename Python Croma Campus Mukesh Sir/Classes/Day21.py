@@ -49,7 +49,29 @@ for i in range(1,101):
     if isPrime(i) and i!=1:
         print(i)
 
-        
+
+def add(a,b=0,c=0):
+    return a+b+c
+
+print(add(23))
+
+
+def add(a=0,b=0,c=0):
+    return a+b+c
+print(add())
+
+
+def add(*t):  # it is a tuple
+    return sum(t)
+
+print(add(23,46,8935,534,246,46,46,4546,35))
+
+def add(**d): # it is a dictionary
+    return type(d)
+
+print(add(name='Rahul',address='Noida'))
+
+
 """
 
    
