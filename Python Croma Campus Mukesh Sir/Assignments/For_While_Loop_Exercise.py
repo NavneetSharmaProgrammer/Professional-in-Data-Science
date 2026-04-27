@@ -209,6 +209,7 @@ while n != g:
     p -= 1
 print(f"\n\t\tYour points is {p}")
 
+22. Write a program to count the frequency of each character in a string.
 
 """
 
