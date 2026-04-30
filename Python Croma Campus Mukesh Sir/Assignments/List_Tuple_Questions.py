@@ -38,7 +38,22 @@ print("LA",la)
 
 4. Write a Python program to count the number of elements in a list without using len().
 
+li = [1,2,3,4,5]
+c = 0
+for i in li:
+    c += 1
+print(c)
+
+5. Write a program to reverse a list without using built-in functions.
+
 """
+li = [1,2,3,4,5]
+print(li[5:0:-1])# why 1 not print
+print(li[-1:-6:-1])
+print(li[5::-1])
+print(li[::-1])
+print(list(reversed(li)))
+
 
 
     
