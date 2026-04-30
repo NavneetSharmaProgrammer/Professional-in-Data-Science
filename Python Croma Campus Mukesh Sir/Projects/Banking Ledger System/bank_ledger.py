@@ -91,6 +91,32 @@ def check_balance(records, acc_no):
         else:
             print(f"  Debit:  - Rs.{abs(trans)}")
 
+def delete_account(records, acc_no):
+    print("\n--- Account Settings ---")
+    print("WARNING: This action cannot be undone.")
+    
+    try:
+        pin = input("Enter 4-digit PIN to confirm: ")
+        if pin != records[acc_no]["pin"]:
+            print("Incorrect PIN! Action cancelled.")
+            return False 
+            
+        confirm = input(f"Are you sure you want to permanently delete account {acc_no}? (Y/N): ")
+        
+        if confirm.upper() == 'Y':
+            del records[acc_no] 
+            
+            save_data(records) 
+            print("Account deleted successfully. We are sorry to see you go!")
+            return True 
+        else:
+            print("Action cancelled. Your account is safe.")
+            return False
+            
+    except ValueError:
+        print("Invalid input!")
+        return False
+
 def login(records):
     print("\n--- User Login ---")
     try:
@@ -106,12 +132,12 @@ def login(records):
             
         print(f"\nWelcome back, {records[acc_no]['name']}!")
         
-        # Inner loop for logged in user
         while True:
             print(f"\n*** {records[acc_no]['name'].upper()}'S DASHBOARD ***")
             print("1. Deposit")
             print("2. Withdraw")
             print("3. Check Balance")
+            print("4. Settings (Delete Account)") 
             print("0. Logout")
             
             choice = int(input("Enter choice: "))
@@ -125,6 +151,10 @@ def login(records):
                 withdraw(records, acc_no)
             elif choice == 3:
                 check_balance(records, acc_no)
+            elif choice == 4:
+                is_deleted = delete_account(records, acc_no)
+                if is_deleted:
+                    break 
             else:
                 print("Invalid choice, try again.")
                 
