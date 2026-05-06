@@ -1,11 +1,19 @@
-# Banking Ledger System
-# Built using File Handling and Dictionaries
-"""
+'''BANKING LEDGER SYSTEM'''
 
+'''
+ACCOUNT(account number, name, pin, balance, history)
 
+MAIN MENU:
+1. Login
+2. Create Account
+0. Exit
 
-
-"""
+USER DASHBOARD:
+1. Deposit
+2. Withdraw
+3. Check Balance
+0. Logout
+'''
 import pickle
 
 filename = "bank_ledger.bin"
